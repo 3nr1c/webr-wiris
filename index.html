@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Restricted R Console</title>
+  <title>R Console</title>
 
   <!-- HARD NETWORK LOCKDOWN:
        Allows loading webR ONLY from webr.r-wasm.org.
@@ -250,7 +250,7 @@
     `);
 
     const shelter = await new webR.Shelter();
-    statusEl.textContent = 'Ready (Restricted Base R)';
+    statusEl.textContent = 'Ready (R script editor)';
     runBtn.disabled = false;
 
     // 4. Run student code (text console only, no graphics device)
