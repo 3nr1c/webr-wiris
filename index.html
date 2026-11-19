@@ -246,6 +246,10 @@
         lock_and_shadow("download.file", deny("Internet access is disabled."), "utils")
         lock_and_shadow("url", deny("Internet access is disabled."), "base")
         lock_and_shadow("socketConnection", deny("Network sockets are disabled."), "base")
+
+        # 5. Disabel Javascript calls
+        lock_and_shadow("eval_js", deny("JavaScript evaluation is disabled in this exam."), "webr")
+        lock_and_shadow("eval_js_raw", deny("JavaScript evaluation is disabled in this exam."), "webr")
       })
     `);
 
