@@ -179,7 +179,7 @@
     editorEl.value = buildPreloadScript();
 
     // 2. Initialize webR
-    const webR = new WebR({ channelType: 3 });
+    const webR = new WebR();
     await webR.init();
 
     // 3. HARDEN THE R ENVIRONMENT BEFORE STUDENT ACCESS
