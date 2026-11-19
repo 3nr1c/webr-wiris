@@ -109,14 +109,14 @@
 <body>
 
   <div class="toolbar">
-    <button id="run-btn" disabled>▶ Run R Code (Ctrl+Enter)</button>
+    <button id="run-btn" disabled>▶ Run R Code</button>
     <button id="clear-btn" class="secondary">Clear Output</button>
-    <span id="status">Loading restricted webR environment...</span>
+    <span id="status">Loading webR environment...</span>
   </div>
 
   <div class="workspace">
     <div class="panel">
-      <div class="panel-header">R Script Editor (Base R Only)</div>
+      <div class="panel-header">R Script Editor</div>
       <textarea id="editor" spellcheck="false" placeholder="# Write your base R code here..."></textarea>
     </div>
 
@@ -280,7 +280,7 @@
       } finally {
         await shelter.purge();
         runBtn.disabled = false;
-        statusEl.textContent = 'Ready (Restricted Base R)';
+        statusEl.textContent = 'Ready (R script editor)';
       }
     }
 
